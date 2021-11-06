@@ -1,11 +1,11 @@
 // Será responsável por criar uma categoria
-
+// Seria o nosso service
 import {
   ICategoryRepositories,
   ICategoryRepositoriesDTO,
-} from "../repositories/ICategoryRepositories";
+} from "../../repositories/ICategoryRepositories";
 
-class CreateCategoryService {
+class CreateCategoryUseCase {
   // Inversão de dependência, o private é necessário
   constructor(private category: ICategoryRepositories) {
     this.category = category;
@@ -21,4 +21,4 @@ class CreateCategoryService {
   }
 }
 
-export default CreateCategoryService;
+export { CreateCategoryUseCase };
