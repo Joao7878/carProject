@@ -1,8 +1,8 @@
-import Category from "../models/CategoryModel";
+import Category from "../../models/CategoryModel";
 import {
   ICategoryRepositories,
   ICategoryRepositoriesDTO,
-} from "./ICategoryRepositories";
+} from "../ICategoryRepositories";
 // Apenas de exemplo
 class PostgresCategoryRepositories implements ICategoryRepositories {
   create({ name, description }: ICategoryRepositoriesDTO) {

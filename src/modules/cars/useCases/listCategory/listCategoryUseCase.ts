@@ -1,4 +1,4 @@
-import CategoriesRepositories from "../../repositories/CategoriesRepositories";
+import CategoriesRepositories from "../../repositories/implementations/CategoriesRepositories";
 
 class ListCategoryUseCase {
   private categoriesRepositories: CategoriesRepositories;
